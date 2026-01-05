@@ -1,0 +1,9 @@
+services:
+  opendify:
+    image: koalalove/opendify:0.1
+    container_name: opendify
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./.env:/app/.env
